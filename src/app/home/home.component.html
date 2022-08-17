@@ -1,0 +1,20 @@
+<ngb-carousel *ngIf="images" [showNavigationArrows]="showNavigationArrows"
+    [showNavigationIndicators]="showNavigationIndicators">
+    <ng-template ngbSlide *ngFor="let image of images">
+        <div class="picsum-img-wrapper">
+            <img class="img" [src]="image" alt="Random slide">
+        </div>
+        <div class="carousel-caption">
+            <h1 class="title">
+                Olá, sejam bem vindos. <br>
+                Meu nome é Danrley e sou um <br>
+                Desenvolvedor
+                <div class="rotate-words">
+                    <span style="--d: 0s">Web full stack.</span>
+                    <span style="--d: 4s">Front-end Angular</span>
+                    <span style="--d: 8s">Back-end Java</span>
+                </div>
+            </h1>
+        </div>
+    </ng-template>
+</ngb-carousel>
