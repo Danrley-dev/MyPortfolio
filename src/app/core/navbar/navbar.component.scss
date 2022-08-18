@@ -1,7 +1,9 @@
 $menuBreakpoint: 700px;
 
-header {
+.header {
     background-color: #09090f;
+    margin: 0;
+    padding: 0;
 }
 
 .nav {
@@ -50,7 +52,9 @@ header {
     transform-origin: left;
 }
 
-.menu-hamburguer, .navBar-hamburguer, .menu-hamburguer-button {
+.menu-hamburguer,
+.navBar-hamburguer,
+.menu-hamburguer-button {
     display: none;
 }
 
@@ -59,7 +63,7 @@ header {
         display: none;
     }
 
-    .material-icons{
+    .material-icons {
         padding: 15px;
         color: white;
     }
@@ -79,7 +83,10 @@ header {
         width: 220px;
         top: 70px;
         height: 250px;
-        background-color: white;
+        background: rgba(255, 255, 255, 0.15);
+        -webkit-backdrop-filter: blur(3px);
+        backdrop-filter: blur(3px);
+        border: 1px solid rgba(255, 255, 255, 0.075);
         border-radius: 2px;
     }
 
@@ -91,28 +98,26 @@ header {
         position: absolute;
         top: -9px;
         right: 180px;
-        background-color: white;
+        background: rgba(255, 255, 255, 0.15);
+        -webkit-backdrop-filter: blur(3px);
+        backdrop-filter: blur(3px);
+        border: 1px solid rgba(255, 255, 255, 0.075);
         transform: rotate(48deg);
     }
 
-    .ul-menu-hamburguer {
-        padding-left: 0;
-        display: flex;
-        justify-content: space-evenly;
-        flex-direction: column;
-        align-items: flex-start;
-        height: 250px;
-    }
-
-    .navBar-hamburguer li {
+    .ul-menu-hamburguer li {
         list-style: none;
-        
     }
 
     .nav_link_hamburguer {
-            display: inline-block;
-            text-decoration: none;
-            color: black;
-            position: relative; 
+        font-size: 1.1rem;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        margin: 30px 50px 20px 0;
+        text-align: center;
+        border-bottom: 1px solid #9595ab;
     }
 }

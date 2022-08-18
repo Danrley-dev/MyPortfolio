@@ -1,10 +1,11 @@
-<header>
+<div class="header">
   <nav class="nav" >
     <ul class="nav_list">
       <li>
+        <a href="#sobre" class="nav_link">Sobre</a>
+        <a href="#" class="nav_link">Habilidades</a>
         <a href="#" class="nav_link">Projetos</a>
-        <a href="#" class="nav_link">Currículo</a>
-        <a href="#sobre" class="nav_link">Sobre Mim</a>
+        <a href="#" class="nav_link">Contatos</a>
       </li>
     </ul>
   </nav>
@@ -13,14 +14,14 @@
       <i class="material-icons"> {{isMenuOpen ? "close" : "menu"}} </i>
     </li>
   </div>
-
   <nav class="navBar-hamburguer" *ngIf="isMenuOpen">
     <ul class="ul-menu-hamburguer">
-      <li >
-        <a href="#" class="nav_link_hamburguer">Projetos</a>
-        <a href="#" class="nav_link_hamburguer">Currículo</a>
-        <a href="#sobre" class="nav_link_hamburguer">Sobre Mim</a>
+      <li (click)="toggleMenu()">
+        <a href="#sobre" class="nav_link_hamburguer" >Sobre</a>
+        <a href="#" class="nav_link_hamburguer" >Habilidades</a>
+        <a href="#" class="nav_link_hamburguer" >Projetos</a>
+        <a href="#" class="nav_link_hamburguer" >Contatos</a>
       </li>
     </ul>
   </nav>
-</header>
+</div>
