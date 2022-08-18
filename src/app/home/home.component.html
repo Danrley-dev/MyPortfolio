@@ -1,25 +1,20 @@
 <div class="body">
     <header>
-        <ngb-carousel *ngIf="images" [showNavigationArrows]="showNavigationArrows"
-            [showNavigationIndicators]="showNavigationIndicators">
-            <ng-template ngbSlide *ngFor="let image of images">
-                <div class="picsum-img-wrapper">
-                    <img class="img" [src]="image" alt="Random slide">
+        <div class="picsum-img-wrapper">
+            <img src="assets/imagens/fundo.png" class="img">
+        </div>
+        <div class="carousel-caption">
+            <h1 class="title">
+                Olá, sejam bem vindos. <br>
+                Meu nome é Danrley e sou <br>
+                desenvolvedor
+                <div class="rotate-words">
+                    <span style="--d: 0s">Web full stack.</span>
+                    <span style="--d: 4s">Front-end Angular</span>
+                    <span style="--d: 8s">Back-end Java</span>
                 </div>
-                <div class="carousel-caption">
-                    <h1 class="title">
-                        Olá, sejam bem vindos. <br>
-                        Meu nome é Danrley e sou <br>
-                        desenvolvedor
-                        <div class="rotate-words">
-                            <span style="--d: 0s">Web full stack.</span>
-                            <span style="--d: 4s">Front-end Angular</span>
-                            <span style="--d: 8s">Back-end Java</span>
-                        </div>
-                    </h1>
-                </div>
-            </ng-template>
-        </ngb-carousel>
+            </h1>
+        </div>
     </header>
     <main>
         <div class="sobre" id="sobre">
@@ -29,11 +24,12 @@
                 Acabo de finalizar um curso com formação de Desenvolvedor Java Full-Stack pela SoulCode Academy,
                 através de uma bolsa de estudos. <br>
                 Busco uma oportunidade como Desenvolvedor Front-end, Back-end ou Full stack. <br>
-                Possuo conhecimentos sólidos em: Angular, TypeScript, JavaScript, HTML5, CSS3, SASS, Bootstrap, Firebase,
+                Possuo conhecimentos sólidos em: Angular, TypeScript, JavaScript, HTML5, CSS3, SASS, Bootstrap,
+                Firebase,
                 Java, Spring boot, Git, Github e MySQL. <br>
-                Busco me tornar especialista na linguagem Java e também ingressar no mundo do desenvolvimento de aplicações nativas.
+                Busco me tornar especialista na linguagem Java e também ingressar no mundo do desenvolvimento de
+                aplicações nativas.
             </p>
         </div>
-        <br><br><br><br>
     </main>
 </div>

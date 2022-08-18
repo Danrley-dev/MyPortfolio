@@ -3,18 +3,21 @@ import { CommonModule } from '@angular/common';
 
 import { NavbarComponent } from './navbar/navbar.component';
 import { RouterModule } from '@angular/router';
+import { HabilidadesComponent } from './habilidades/habilidades.component';
 
 
 @NgModule({
   declarations: [
-    NavbarComponent
+    NavbarComponent,
+    HabilidadesComponent
   ],
   imports: [
     CommonModule,
     RouterModule
   ],
   exports: [
-    NavbarComponent
+    NavbarComponent,
+    HabilidadesComponent
   ]
 })
 export class CoreModule { }

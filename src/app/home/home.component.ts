@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-home',
@@ -8,14 +7,7 @@ import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
 })
 export class HomeComponent implements OnInit {
 
-  showNavigationArrows = false;
-  showNavigationIndicators = false;
-  images = ['assets/imagens/fundo.png'];
-
-  constructor(config: NgbCarouselConfig) {
-    config.showNavigationArrows = true;
-    config.showNavigationIndicators = true;
-  }
+  constructor() { }
   
   ngOnInit(): void {
   }
