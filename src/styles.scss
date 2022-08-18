@@ -3,8 +3,10 @@
 /* Importing Bootstrap SCSS file. */
 @import '~bootstrap/scss/bootstrap';
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,600;1,700&display=swap');
-
+@import '~hamburgers/_sass/hamburgers/hamburgers.scss';
 *{
     margin: 0;
     padding: 0;
 }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

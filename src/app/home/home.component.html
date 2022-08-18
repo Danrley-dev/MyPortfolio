@@ -1,20 +1,37 @@
-<ngb-carousel *ngIf="images" [showNavigationArrows]="showNavigationArrows"
-    [showNavigationIndicators]="showNavigationIndicators">
-    <ng-template ngbSlide *ngFor="let image of images">
-        <div class="picsum-img-wrapper">
-            <img class="img" [src]="image" alt="Random slide">
-        </div>
-        <div class="carousel-caption">
-            <h1 class="title">
-                Olá, sejam bem vindos. <br>
-                Meu nome é Danrley e sou um <br>
-                Desenvolvedor
-                <div class="rotate-words">
-                    <span style="--d: 0s">Web full stack.</span>
-                    <span style="--d: 4s">Front-end Angular</span>
-                    <span style="--d: 8s">Back-end Java</span>
+<body>
+    <header>
+        <ngb-carousel *ngIf="images" [showNavigationArrows]="showNavigationArrows"
+            [showNavigationIndicators]="showNavigationIndicators">
+            <ng-template ngbSlide *ngFor="let image of images">
+                <div class="picsum-img-wrapper">
+                    <img class="img" [src]="image" alt="Random slide">
                 </div>
-            </h1>
+                <div class="carousel-caption">
+                    <h1 class="title">
+                        Olá, sejam bem vindos. <br>
+                        Meu nome é Danrley e sou <br>
+                        desenvolvedor
+                        <div class="rotate-words">
+                            <span style="--d: 0s">Web full stack.</span>
+                            <span style="--d: 4s">Front-end Angular</span>
+                            <span style="--d: 8s">Back-end Java</span>
+                        </div>
+                    </h1>
+                </div>
+            </ng-template>
+        </ngb-carousel>
+    </header>
+    <main>
+        <div class="sobre" id="sobre">
+            <h1>Sobre mim</h1>
+            <p>
+                23 anos, estudo desenvolvimento web há mais de 8 meses. <br>
+                Acabo de finalizar um curso com formação de Desenvolvedor Java Full-Stack pela SoulCode Academy,
+                através de uma bolsa de estudos.  <br>
+                Busco uma oportunidade como Desenvolvedor Front-end, Back-end ou Full stack. <br>
+                Possuo conhecimentos sólidos em: Angular, TypeScript, JavaScript, HTML5, CSS3, SASS, Bootstrap, Firebase, Java, Spring boot, Git, Github e MySQL. <br>
+                Busco futuramente ingressar no mundo do desenvolvimento de aplicações nativas.
+            </p>
         </div>
-    </ng-template>
-</ngb-carousel>
+    </main>
+</body>

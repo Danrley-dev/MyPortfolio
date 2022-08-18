@@ -7,12 +7,12 @@ import { NgbOffcanvas } from '@ng-bootstrap/ng-bootstrap';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent implements OnInit {
+  isMenuOpen = false;
 
-  constructor(private offcanvasService: NgbOffcanvas) { }
-
-  openCustomPanelClass(content: TemplateRef<any>) {
-    this.offcanvasService.open(content, { panelClass: 'bg-info' });
+  toggleMenu(): void {
+    this.isMenuOpen = !this.isMenuOpen;
   }
+  constructor() { }
 
   ngOnInit(): void {
   }
