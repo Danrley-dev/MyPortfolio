@@ -1,12 +1,18 @@
-/* You can add global styles to this file, and also import other style files */
-
-/* Importing Bootstrap SCSS file. */
 @import '~bootstrap/scss/bootstrap';
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,600;1,700&display=swap');
 @import '~hamburgers/_sass/hamburgers/hamburgers.scss';
+
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
 }
-html, body { height: 100%;}
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+html, body { height: 100%; overflow-x: hidden; background-color: #09090f;}
+html{overflow-y: hidden;}
+body { margin: 0; font-family: 'Josefin Sans', sans-serif; }
+.trancatela{
+    max-width: 1920px;
+    margin: 0 auto;
+}

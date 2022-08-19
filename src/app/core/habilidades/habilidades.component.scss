@@ -1,5 +1,6 @@
-*{
-    background-color:white;
+* {
+    padding-bottom: 20px;
+    background-color: #09090f;
 }
 
 h1 {
@@ -16,8 +17,10 @@ h1 {
 .container {
     position: relative;
     padding: 15px;
-    max-width: 640px;
+    width: 100%;
+    max-height: 240px;
     margin: 0 auto;
+    background-color: #09090f;
 }
 
 .gallery-wrapper {
@@ -36,7 +39,7 @@ h1 {
     width: 40px;
     color: #fff;
     transition: all 600ms ease-in-out;
-    background: linear-gradient(to left, transparent 0%, black 200%);
+    background: linear-gradient(to left, transparent 0%, white 200%);
     opacity: 0.1;
     cursor: pointer;
     border: none;
@@ -51,7 +54,7 @@ h1 {
     right: 0;
     left: auto;
     text-align: right;
-    background: linear-gradient(to right, transparent 0%, black 200%);
+    background: linear-gradient(to right, transparent 0%, white 200%);
 }
 
 .gallery {
@@ -62,8 +65,8 @@ h1 {
 }
 
 .item {
-    width: 250px;
-    height: 250px;
+    width: 220px;
+    height: 220px;
     flex-shrink: 0;
     transition: all 600ms ease-in-out;
     opacity: 0.5;
@@ -82,22 +85,30 @@ h1 {
     scrollbar-width: none;
 }
 
-.cyan {
-    background: cyan;
+@media(max-width:620px) {
+    .principal {
+        h1 {
+            width: 100%;
+        }
+
+        .container {
+            max-width: 450px;
+            height: 180px;
+        }
+
+        .item {
+            width: 180px;
+            height: 180px;
+        }
+    }
 }
 
-.deeppink {
-    background: deeppink;
-}
+@media(max-width:400px) {
+    .principal {
+        width: 100%;
 
-.turquoise {
-    background: turquoise;
-}
-
-.darkblue {
-    background: darkblue;
-}
-
-.purple {
-    background: purple;
+        .container {
+            max-width: 350px;
+        }
+    }
 }

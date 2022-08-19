@@ -5,46 +5,53 @@
     padding-bottom: 200px;
 }
 
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 50px;
+    margin-top: 100px;
+
+    img {
+        margin-right: 200px;
+        width: 80%;
+    }
+
+    .title h1 {
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 400;
+        text-align: left;
+        font-size: 2.8rem;
+        line-height: 1;
+        color: white;
+        margin-left: 200px;
+    }
+
+    .rotate-words {
+        display: inline;
+        margin-left: 10px;
+    }
+
+    .rotate-words span {
+        width: max-content;
+        position: absolute;
+        background: #474bff;
+        background: -webkit-linear-gradient(141deg, #474bff 0%, rgba(0, 255, 231, 0.9) 50%, #bc48ff 100%);
+        background: linear-gradient(141deg, #474bff 0%, rgba(0, 255, 231, 0.9) 50%, #bc48ff 100%);
+        padding-inline: 10px;
+        padding: 8px;
+        opacity: 0;
+        transform-origin: 10% 75%;
+        animation: rotatewords 12s var(--d)linear infinite;
+        border-radius: 3px;
+    }
+
+}
+
 main {
-    margin-top: 30px;
+    margin-top: 200px;
     background-color: #09090f;
     color: white;
-}
-
-.img {
-    width: 100vw;
-    height: 80vh;
-    padding-bottom: 3px;
-}
-
-.title {
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight: 400;
-    text-align: left;
-    font-size: 2.8rem;
-    line-height: 1;
-    position: relative;
-    color: white;
-    margin-bottom: 350px;
-}
-
-.rotate-words {
-    display: inline;
-    margin-left: 10px;
-}
-
-.rotate-words span {
-    width: max-content;
-    position: absolute;
-    background: #474bff;
-    background: -webkit-linear-gradient(141deg, #474bff 0%, rgba(0, 255, 231, 0.9) 50%, #bc48ff 100%);
-    background: linear-gradient(141deg, #474bff 0%, rgba(0, 255, 231, 0.9) 50%, #bc48ff 100%);
-    padding-inline: 10px;
-    padding: 8px;
-    opacity: 0;
-    transform-origin: 10% 75%;
-    animation: rotatewords 12s var(--d)linear infinite;
-    border-radius: 3px;
 }
 
 .sobre {
@@ -96,10 +103,20 @@ main {
 
 @media(max-width: 850px) {
 
-    .title {
-        position: absolute;
-        top: -400px;
-        font-size: 2.5rem;
+    .header {
+        margin-top: 20px;
+        flex-direction: column-reverse;
+        gap: 20px;
+        img {
+            margin: 0;
+            padding: 0;
+        }
+
+        .title h1 {
+            margin: 0;
+            padding: 0;
+            margin-right: 50px;
+        }
     }
 
     .sobre {
@@ -117,11 +134,20 @@ main {
 }
 
 @media(max-width: 720px) {
-    .title {
-        margin-right: 45%;
-        position: absolute;
-        top: -300px;
-        font-size: xx-large;
+    .header {
+        margin-top: 20px;
+        flex-direction: column-reverse;
+
+        img {
+            margin: 0;
+            padding: 0;
+        }
+
+        .title h1 {
+            margin: 0;
+            padding: 0;
+            font-size: 2rem;
+        }
     }
 
     .sobre {
@@ -139,11 +165,19 @@ main {
 }
 
 @media(max-width: 500px) {
-    .title {
-        margin-right: 45%;
-        position: absolute;
-        top: -300px;
-        font-size: xx-large;
+    .header {
+        margin-top: 20px;
+        gap: 10px;
+        img {
+            margin: 0;
+            padding: 0;
+        }
+
+        .title h1 {
+            margin: 0;
+            padding: 0;
+            font-size: 2rem;
+        }
     }
 
     .sobre {
