@@ -1,0 +1,67 @@
+.container {
+    margin-top: 200px;
+
+    h1 {
+        color: white;
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: bolder;
+    }
+}
+
+.h1Destaque{
+    font-size: 1.8rem;
+    border-bottom: 1px solid white;
+}
+
+.h1Todos{
+    margin-top: 200px;
+    font-size: 1.8rem;
+}
+
+.h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bolder;
+    font-size: 2.3rem;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 50px;
+    color: white;
+}
+
+.projetoDestaque {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.demaisProject {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.project {
+    width: 400px;
+    margin: auto;
+    margin-bottom: 20px;
+    cursor: pointer;
+    opacity: 0.7;
+    img {
+        width: 100%;
+    }
+}
+
+.project:hover {
+    transition: transform 1s;
+    transform: translateX(10px) scale(1.2);
+    opacity: 1;
+}
+
+@media(max-width: 820px){
+    .h1Todos{
+        margin-top: 100px;
+        font-size: 1.8rem;
+    }
+}
