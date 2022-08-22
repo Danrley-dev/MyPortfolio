@@ -2,7 +2,7 @@ name: Build and Deploy Angular
 on:
   push:
     branches:
-      - main
+      - master
 jobs:
   build:
 
@@ -17,4 +17,4 @@ jobs:
         build_configuration: production
         base_href: https://danrley-dev.github.io/MyPortfolio/
         deploy_branch: gh-pages
-        angular_dist_build_folder: dist/portfolio
+        angular_dist_build_folder: dist/MyPortfolio
