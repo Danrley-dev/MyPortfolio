@@ -7,13 +7,15 @@ import { HabilidadesComponent } from './habilidades/habilidades.component';
 import { ProjetosComponent } from './projetos/projetos.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MaterialModule } from '../shared/Material/material.module';
+import { DialogComponent } from './dialog/dialog.component';
 
 
 @NgModule({
   declarations: [
     NavbarComponent,
     HabilidadesComponent,
-    ProjetosComponent
+    ProjetosComponent,
+    DialogComponent
   ],
   imports: [
     CommonModule,

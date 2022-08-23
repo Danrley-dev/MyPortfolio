@@ -48,6 +48,7 @@
     margin: auto;
     margin-bottom: 20px;
     opacity: 0.7;
+
     button {
         visibility: hidden;
     }
@@ -59,25 +60,29 @@
 
 .project:hover {
     transition: transform 1s;
-    transform: translateX(10px) scale(1.2);
+    transform: translateX(10px) scale(1.1);
     opacity: 1;
 
     button {
         visibility: visible;
-        position: relative;
-        left: 155px;
-        bottom: 60px;
-        border-radius: 10px;
-        padding: 8px 10px;
-        background-color: #bc48ff;
+        border-radius: 0px 0px 10px 10px;
+        padding: 6px 173px;
+        background: #474bff;
+        background: -webkit-linear-gradient(141deg, #474bff 0%, rgba(0, 255, 231, 0.9) 50%, #bc48ff 100%);
+        background: linear-gradient(141deg, #474bff 0%, rgba(0, 255, 231, 0.9) 50%, #bc48ff 100%);
         color: white;
         font-family: Arial, Helvetica, sans-serif;
         border: 0;
     }
 
     h1 {
-        display: none;
+        visibility: hidden;
     }
+}
+
+.project:hover button {
+    transition: transform 1s;
+    transform: translatey(5px);
 }
 
 .project>div {
@@ -91,5 +96,11 @@
     .h1Todos {
         margin-top: 100px;
         font-size: 1.8rem;
+    }
+}
+
+@media(max-width: 500px) {
+    .project:hover{
+        transform: none;
     }
 }
