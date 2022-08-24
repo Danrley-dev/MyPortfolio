@@ -1,6 +1,7 @@
-import { BreakpointObserver, Breakpoints, BreakpointState } from '@angular/cdk/layout';
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
+import { DialogProjetos} from 'src/app/models/projetos';
+import { ProjetosService } from 'src/app/shared/services/projetos.service';
 import { DialogComponent } from '../dialog/dialog.component';
 
 @Component({
@@ -9,19 +10,27 @@ import { DialogComponent } from '../dialog/dialog.component';
   styleUrls: ['./projetos.component.scss']
 })
 export class ProjetosComponent implements OnInit {
+  projetoDestaque: DialogProjetos[] = [];
+  todosProjetos: DialogProjetos[] = [];
 
-  constructor(private dialog: MatDialog) { }
+  constructor(
+    private dialog: MatDialog,
+    private projetosServices: ProjetosService
+  ) { }
 
-  openDialogCreate() {
+  openDialog(obj: any) {
     const dialogRef = this.dialog.open(DialogComponent, {
-      width: '80%',
-      height: '500px',
-      panelClass: 'custom-modalbox'
+      width: '80% || 70%',
+      height: '60% || 70%',
+      panelClass: 'custom-modalbox',
+      data: obj,
     });
     dialogRef.afterClosed().subscribe();
   }
 
   ngOnInit(): void {
+    this.projetoDestaque = this.projetosServices.getProjetoDestaque()
+    this.todosProjetos = this.projetosServices.getTodosProjetos();
   }
 
 }

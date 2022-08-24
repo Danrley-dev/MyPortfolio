@@ -1,10 +1,30 @@
 ::ng-deep .custom-modalbox {
-    p{
+    p {
         font-family: Arial, Helvetica, sans-serif;
         font-size: 1.2rem;
         font-weight: normal;
         line-height: 1.3;
         width: 500px;
+    }
+
+    mat-dialog-content {
+        scrollbar-width: auto;
+        scrollbar-color: #00000082 #ffffff;
+        scroll-margin-bottom: 50px;
+    }
+
+    mat-dialog-content::-webkit-scrollbar {
+        width: 11px;
+    }
+
+    mat-dialog-content::-webkit-scrollbar-track {
+        background: rgba(255, 255, 255, 0.075);
+    }
+
+    mat-dialog-content::-webkit-scrollbar-thumb {
+        background-color: #00000082;
+        border-radius: 10px;
+        border: 3px solid rgba(255, 255, 255, 0.075);
     }
 
     mat-dialog-container {
@@ -14,28 +34,108 @@
         border: 1px solid rgba(255, 255, 255, 0.075);
         color: white;
 
-        .dialog {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            h2 {
-                font-family: 'Josefin Sans', sans-serif;
-                font-size: 1.8rem;
-            }
-        }
+        overflow: hidden;
+        scrollbar-width: auto;
+        scrollbar-color: #00000082 #ffffff;
+        scroll-margin-bottom: 50px;
+    }
 
-        .video {
-            width: 500px;
-            height: 300px;
-            video {
-                width: 100%;
-                margin-top: 100px;
-            }
-        }
+    mat-dialog-container::-webkit-scrollbar {
+        width: 11px;
+    }
 
-        .info{
-            width: 300px;
+    mat-dialog-container::-webkit-scrollbar-track {
+        background: rgba(255, 255, 255, 0.075);
+    }
+
+    mat-dialog-container::-webkit-scrollbar-thumb {
+        background-color: #00000082;
+        border-radius: 10px;
+        border: 3px solid rgba(255, 255, 255, 0.075);
+    }
+
+    .dialog {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+        h2 {
+            font-family: 'Josefin Sans', sans-serif;
+            font-size: 1.8rem;
+            margin-top: 30px;
         }
     }
+
+    .video {
+        width: 500px;
+        height: 300px;
+
+        video {
+            width: 90%;
+            height: 100%;
+            margin-top: 50px;
+        }
+    }
+
+    .info {
+        width: 300px;
+    }
+}
+
+mat-dialog-actions {
+    justify-content: end;
+
+    button {
+        border: none;
+        border-radius: 10px;
+        padding: 6px 15px;
+        background-color: #bc48ff;
+        color: white;
+    }
+
+    button:hover {
+        background-color: #8917cb;
+        transition: 0.8s;
+    }
+}
+
+@media(max-width:1310px) {
+
+    p {
+        width: 300px;
+    }
+}
+
+@media(max-width:1080px) {
+
+    .dialog h2 {
+        margin-top: 120px;
+    }
+
+    p {
+        width: 400px;
+    }
+}
+
+@media(max-width:720px) {
+
+    p {
+        width: 200px;
+    }
+
+    .dialog h2 {
+        margin-top: 0px;
+    }
+
+    .video {
+        width: auto;
+        video {
+            margin-top: 50px;
+            width: 280px;
+            height: 200px;
+        }
+
+    }
+
 }

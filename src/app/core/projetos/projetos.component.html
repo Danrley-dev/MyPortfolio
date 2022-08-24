@@ -1,78 +1,22 @@
 <div class='container' id="projetos">
   <h1 class="h1">Projetos</h1>
   <h1 class="h1Destaque">Destaques</h1>
-  <div class="projetoDestaque">
-    <div class="project">
-      <img src="assets/imagens/portfolio.jpeg">
-      <button (click)="openDialogCreate()">Detalhes</button>
+  <div class="projetoDestaque" >
+    <div class="project" *ngFor="let projeto of projetoDestaque">
+      <img src="{{projeto.imagem}}">
+      <button (click)="openDialog(projeto)">Detalhes</button>
       <div>
-        <h1>Infoclick</h1>
-      </div>
-    </div>
-    <div class="project">
-      <img src="assets/imagens/diarios.jpeg">
-      <button>Detalhes</button>
-      <div>
-        <h1>Diarios</h1>
-      </div>
-    </div>
-    <div class="project">
-      <img src="assets/imagens/helpr.jpeg">
-      <button>Detalhes</button>
-      <div>
-        <h1>Helpr</h1>
+        <h1>{{projeto.texto}}</h1>
       </div>
     </div>
   </div>
   <h1 class="h1Todos">Todos os projetos</h1>
-  <div class="demaisProject">
-    <div class="project">
-      <img src="assets/imagens/soulgames.jpeg">
-      <button>Detalhes</button>
+  <div class="demaisProject" >
+    <div class="project" *ngFor="let projeto of todosProjetos">
+      <img src="{{projeto.imagem}}">
+      <button (click)="openDialog(projeto)">Detalhes</button>
       <div>
-        <h1>Ecommerce</h1>
-      </div>
-    </div>
-    <div class="project">
-      <img src="assets/imagens/goodpay.jpeg">
-      <button>Detalhes</button>
-      <div>
-        <h1>Goodpay</h1>
-      </div>
-    </div>
-    <div class="project">
-      <img src="assets/imagens/gsw.jpeg">
-      <button>Detalhes</button>
-      <div>
-        <h1>Warriors</h1>
-      </div>
-    </div>
-    <div class="project">
-      <img src="assets/imagens/link.jpeg">
-      <button>Detalhes</button>
-      <div>
-        <h1>Links</h1>
-      </div>
-    </div>
-    <div class="project">
-      <img src="assets/imagens/captura.jpeg">
-      <button>Detalhes</button>
-      <div>
-        <h1>Captura</h1>
-      </div>
-    </div>
-    <div class="project">
-      <img src="assets/imagens/cordel.jpeg">
-      <button>Detalhes</button>
-      <div>
-        <h1>Cordel</h1>
-      </div>
-    </div>
-    <div class="project">
-      <img src="assets/imagens/android.jpeg">
-      <button>Detalhes</button>
-      <div>
-        <h1>Android</h1>
+        <h1>{{projeto.texto}}</h1>
       </div>
     </div>
   </div>
