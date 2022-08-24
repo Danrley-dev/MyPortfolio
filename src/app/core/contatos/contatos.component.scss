@@ -1,7 +1,7 @@
 .container {
     width: 80%;
     margin-top: 100px;
-    
+
 
     h1 {
         font-family: 'Josefin Sans', sans-serif;
@@ -21,13 +21,19 @@
 
     .input {
         text-align: center;
+
         input {
-            background-color: #bc48ff;
+            background-color: orangered;
             color: white;
             font-family: Arial, Helvetica, sans-serif;
             padding: 6px 10px;
             border-radius: 10px;
             margin: 0 5px;
+        }
+
+        input:hover {
+            background-color: rgb(189, 58, 11);
+            transition: 0.8s;
         }
     }
 }

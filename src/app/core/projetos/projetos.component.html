@@ -3,8 +3,8 @@
   <h1 class="h1Destaque">Destaques</h1>
   <div class="projetoDestaque" >
     <div class="project" *ngFor="let projeto of projetoDestaque">
-      <img src="{{projeto.imagem}}">
-      <button (click)="openDialog(projeto)">Detalhes</button>
+      <img (click)="openDialog(projeto)" src="{{projeto.imagem}}">
+      <mat-icon (click)="openDialog(projeto)">play_circle_outline</mat-icon>
       <div>
         <h1>{{projeto.texto}}</h1>
       </div>
@@ -13,8 +13,8 @@
   <h1 class="h1Todos">Todos os projetos</h1>
   <div class="demaisProject" >
     <div class="project" *ngFor="let projeto of todosProjetos">
-      <img src="{{projeto.imagem}}">
-      <button (click)="openDialog(projeto)">Detalhes</button>
+      <img (click)="openDialog(projeto)" src="{{projeto.imagem}}">
+      <mat-icon (click)="openDialog(projeto)">play_circle_outline</mat-icon>
       <div>
         <h1>{{projeto.texto}}</h1>
       </div>

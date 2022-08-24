@@ -4,7 +4,7 @@ $menuBreakpoint: 700px;
     background-color: #09090f;
     margin: 0;
     padding: 0;
-    border-bottom:1px solid #bc48ff;
+    border-bottom:1px solid orangered;
 }
 
 .nav {
@@ -40,9 +40,7 @@ $menuBreakpoint: 700px;
     bottom: 0;
     width: 100%;
     height: 2px;
-    background: #474bff;
-    background: -webkit-linear-gradient(141deg, #474bff 0%, rgba(0, 255, 231, 0.9) 50%, #bc48ff 100%);
-    background: linear-gradient(141deg, #474bff 0%, rgba(0, 255, 231, 0.9) 50%, #bc48ff 100%);
+    background-color: orangered;
     transform: scaleX(0);
     transform-origin: right;
     transition: transform .5s;

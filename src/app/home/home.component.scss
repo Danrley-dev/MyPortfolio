@@ -35,9 +35,7 @@
     .rotate-words span {
         width: max-content;
         position: absolute;
-        background: #474bff;
-        background: -webkit-linear-gradient(141deg, #474bff 0%, rgba(0, 255, 231, 0.9) 50%, #bc48ff 100%);
-        background: linear-gradient(141deg, #474bff 0%, rgba(0, 255, 231, 0.9) 50%, #bc48ff 100%);
+        background-color:orangered;
         padding-inline: 10px;
         padding: 8px;
         opacity: 0;
@@ -56,14 +54,14 @@
 
 .btnn button {
     margin-left: 50px;
-    border: 1px solid #bc48ff;
+    border: 1px solid orangered;
     border-radius: 10px;
     padding: 10px;
     background-color: #09090f;
 }
 
 .btnn button:hover{
-    background-color: #bc48ff;
+    background-color: orangered;
     transition: 0.8s;
 }
 
