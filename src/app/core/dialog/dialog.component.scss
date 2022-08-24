@@ -81,20 +81,41 @@
     .info {
         width: 300px;
     }
+
+}
+
+.rep {
+    margin-top: 30px;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+
+    a {
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        border: none;
+        border-radius: 10px;
+        padding: 8px 15px;
+        background-color: #bc48ff;
+        color: white;
+        margin: 10px;
+    }
+
+    a:hover {
+        background-color: #8917cb;
+        transition: 0.8s;
+    }
+
+    a > img{
+        width: 25px;
+    }
 }
 
 mat-dialog-actions {
     justify-content: end;
 
-    button {
-        border: none;
-        border-radius: 10px;
-        padding: 6px 15px;
-        background-color: #bc48ff;
-        color: white;
-    }
-
-    button:hover {
+    mat-icon:hover {
+        border-radius: 3px;
         background-color: #8917cb;
         transition: 0.8s;
     }
@@ -121,7 +142,7 @@ mat-dialog-actions {
 @media(max-width:720px) {
 
     p {
-        width: 200px;
+        width: 400px;
     }
 
     .dialog h2 {
@@ -130,6 +151,7 @@ mat-dialog-actions {
 
     .video {
         width: auto;
+
         video {
             margin-top: 50px;
             width: 280px;
@@ -138,4 +160,24 @@ mat-dialog-actions {
 
     }
 
+}
+
+@media(max-width:600px){
+    p {
+        width: 300px;
+    }
+
+    .rep{
+        justify-content: center;
+        gap: 20px;
+        a{
+           gap: 20px;
+        }
+    }
+}
+
+@media(max-width:410px){
+    p {
+        width: 250px;
+    }
 }

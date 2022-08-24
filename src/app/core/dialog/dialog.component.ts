@@ -22,7 +22,7 @@ export class DialogComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    console.log('Video', this.projeto.detalhes.video)
+   
   }
 
 }

@@ -8,6 +8,7 @@ import { ProjetosComponent } from './projetos/projetos.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MaterialModule } from '../shared/Material/material.module';
 import { DialogComponent } from './dialog/dialog.component';
+import { ContatosComponent } from './contatos/contatos.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { DialogComponent } from './dialog/dialog.component';
     NavbarComponent,
     HabilidadesComponent,
     ProjetosComponent,
-    DialogComponent
+    DialogComponent,
+    ContatosComponent
   ],
   imports: [
     CommonModule,
@@ -26,7 +28,8 @@ import { DialogComponent } from './dialog/dialog.component';
   exports: [
     NavbarComponent,
     HabilidadesComponent,
-    ProjetosComponent
+    ProjetosComponent,
+    ContatosComponent
   ]
 })
 export class CoreModule { }

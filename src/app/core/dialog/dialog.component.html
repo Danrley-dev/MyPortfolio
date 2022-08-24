@@ -1,16 +1,28 @@
 <mat-dialog-content>
+    <mat-dialog-actions>
+        <mat-icon mat-dialog-close>close</mat-icon>
+    </mat-dialog-actions>
     <div class="dialog">
         <div class="video">
             <video controls>
                 <source src="{{projeto.detalhes.video}}" type="video/mp4">
-              </video>
+            </video>
         </div>
         <div class="infor">
             <h2>{{projeto.detalhes.nome}}</h2>
             <p>{{projeto.detalhes.descricao}}</p>
         </div>
     </div>
-    <mat-dialog-actions>
-        <button mat-button mat-dialog-close>Voltar</button>
-    </mat-dialog-actions>
+    <div class="rep">
+        <div *ngIf="projeto.detalhes.repBack">
+            <a href="{{projeto.detalhes.repBack}}" target="_blank"><img src="assets/imagens/github.png">
+                Repositório Back-end
+            </a>
+        </div>
+        <div>
+            <a href="{{projeto.detalhes.repFront}}" target="_blank"><img src="assets/imagens/github.png">
+                Repositório Front-end
+            </a>
+        </div>
+    </div>
 </mat-dialog-content>

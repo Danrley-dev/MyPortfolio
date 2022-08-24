@@ -14,5 +14,7 @@ export interface Detalhes{
     video: string;
     nome: string;
     descricao: string; 
+    repBack?: string;
+    repFront?: string;
 }
 
