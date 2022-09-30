@@ -93,16 +93,15 @@
     a {
         text-decoration: none;
         font-family: Arial, Helvetica, sans-serif;
-        border: none;
         border-radius: 10px;
         padding: 8px 15px;
-        background-color: orangered;
+        background-color: #03a9f4;
         color: white;
         margin: 10px;
     }
 
     a:hover {
-        background-color: rgb(189, 58, 11);
+        background-color: #0377f4;
         transition: 0.8s;
     }
 
@@ -116,7 +115,7 @@ mat-dialog-actions {
 
     mat-icon:hover {
         border-radius: 3px;
-        background-color: rgb(189, 58, 11);
+        background-color: #03a9f4;
         transition: 0.8s;
     }
 }
